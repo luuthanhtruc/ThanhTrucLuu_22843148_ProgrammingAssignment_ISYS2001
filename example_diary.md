@@ -11,45 +11,38 @@ This file shows sample entries for your **Developer's Diary**. You must document
 
 ## Foundation Skills Examples
 
-### Entry 1 – Effective AI Prompting for Business Data
-**Artifact:** Screenshot of ChatGPT conversation about analyzing spending data.
+### Entry 1 – Improving AI Connection Error Handling
+**Artifact:** Screenshot of ChatGPT conversation about fixing Hands-on-AI server connection errors and improving API testing code for the Smart Finance Assistant project.
 
-**My Initial Prompt:** "Help me analyze CSV data with pandas"
+**My Initial Prompt:** "Why is this error happening?"
 
-**My Improved Prompt:** "I'm building a Smart Finance Assistant. I have a CSV with Date, Amount, Category, Description columns. The Amount has dollar signs that need cleaning. I want to calculate total spending by category and format results for a business presentation. Please write pandas code with clear comments."
+**My Improved Prompt:** "I am testing the Hands-on-AI server connection for my Smart Finance Assistant project using get_response(). The response sometimes returns connection errors even when the code structure is correct. Help me improve the code with better error handling, response validation, fallback messaging, and troubleshooting steps for Google Colab."
 
-**Context:** Learning to write specific, business-focused AI prompts.
+**Context:** Learning how to improve AI-generated code reliability and handle real-world API connection problems professionally.
 
-**Reflection:** The first prompt gave me generic pandas code. The improved prompt with business context got me professional, commented code that handled data cleaning. I learned that AI needs clear business context and output requirements to give useful results. Now I always include: data structure, business purpose, and desired output format.
+**Reflection:**: The first version only displayed basic connection errors. The improved version added better error handling, fallback responses, and clearer troubleshooting steps. I learned that AI applications should handle API failures gracefully and provide user-friendly feedback instead of crashing.
+
 
 ---
 
-### Entry 2 – Critiquing and Improving AI Code
-**Artifact:** Before/after screenshots of AI-generated spending analysis code.
+### Entry 2 – Data Loading and Cleaning Function
+**Artifact:** Screenshot of my ChatGPT conversation about improving the load_and_clean_transaction_data() function for my Smart Finance Assistant project.
 
-**Context:** AI gave me complex code that was hard to understand for my transaction analysis.
+**Context:** Creating a reliable function to load and clean financial transaction data before analysis.
 
 **AI's First Response:**
 ```python
-df.groupby('Category')['Amount'].agg({'sum','mean','count'}).round(2)
+def load_and_clean_transaction_data(file_path): pass
 ```
 
-**My Critique:** "This code is unclear and doesn't handle dollar signs. Can you make it more readable with business-friendly variable names and add data cleaning?"
+**My Critique:** "The function is incomplete because pass does nothing. I need proper CSV loading, data cleaning, validation, missing value handling, and business-friendly error messages."
 
 **AI's Improved Response:**
 ```python
-# Clean amount data by removing dollar signs
-df['Amount_Clean'] = pd.to_numeric(df['Amount'].str.replace('$', ''), errors='coerce')
-
-# Calculate spending metrics by category
-spending_summary = df.groupby('Category')['Amount_Clean'].agg({
-    'Total_Spent': 'sum',
-    'Average_Amount': 'mean', 
-    'Transaction_Count': 'count'
-}).round(2)
+# Clean Amount column df["Amount"] = ( df["Amount"] .astype(str) .str.replace("$", "", regex=False) .str.replace(",", "", regex=False) ) # Convert Amount to numeric df["Amount"] = pd.to_numeric( df["Amount"], errors="coerce" ) # Remove invalid rows df = df.dropna(subset=["Amount"]) # Convert Date column df["Date"] = pd.to_datetime( df["Date"], errors="coerce" )
 ```
 
-**Reflection:** I learned that AI's first response isn't always the best. By asking for clearer variable names and business context, I got much better code. This taught me to always review AI code and ask for improvements rather than accepting the first solution.
+**Reflection:** The first AI response only provided an empty function structure and did not solve the actual problem. After giving more detailed feedback and explaining the business requirements, the AI generated a much more useful solution with CSV validation, data cleaning, type conversion, and better error handling. I learned that AI-generated code often needs refinement, and giving clear technical and business context helps produce more professional and reliable results.
 
 ---
 
