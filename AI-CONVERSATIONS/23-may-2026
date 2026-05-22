@@ -1,6 +1,6 @@
 
 
-**Prompt:**
+**Prompt 1:**
 “I am creating a Smart Finance Assistant and writing code to test the AI connection. I want a shorter, cleaner, and more aesthetic version of the code.”
 
 **AI Response Summary:**
@@ -23,4 +23,32 @@ if "Error" in str(response):
 **How It Helped the Project:**
 The AI helped improve code readability and user experience by making the connection test cleaner, easier to understand, and more visually appealing for beginner-level Python development.
 
+
+
+**Prompt 2:**
+“Help me brainstorm specific personal finance problems that could be solved with a CSV analysis tool. I'm interested in helping people with budgeting and spending awareness.”
+
+**AI Response Summary:**
+The AI suggested several realistic financial problems that could be solved using transaction CSV analysis, including:
+
+* budget overspending detection,
+* subscription tracking,
+* spending habit awareness,
+* savings improvement,
+* and cash flow management.
+
+The AI also helped rewrite the ideas into professional problem statements that clearly explained:
+
+* the target users,
+* the financial challenge,
+* and the value provided by the system.
+
+**Example Improvement Provided by AI:**
+
+```text
+I want to help university students manage their monthly budgets by analyzing their bank transaction CSV files. The system should identify categories where users overspend, compare spending against budget limits, and provide simple recommendations to improve financial control.
+```
+
+**How It Helped the Project:**
+The AI helped define a clearer project direction by transforming general budgeting ideas into specific real-world financial problems. This improved the quality of the project proposal and made the Smart Finance Assistant concept more practical and user-focused.
 
