@@ -1,1 +1,45 @@
 
+### AI Conversation Evidence
+
+**Prompt:**
+“The Smart Finance Assistant successfully generated the spending analysis report, but the RAG system returned a connection error when calling `rag.ask()`. How can I improve the system to handle this situation more professionally?”
+
+**AI Response Summary:**
+The AI explained that the CSV analysis and financial report generation were functioning correctly, and that the error was caused by the external `hands_on_ai` AI service connection rather than the financial analysis code itself.
+
+The AI recommended improving the system by adding:
+
+* graceful error handling,
+* fallback AI responses,
+* and offline financial advice mode.
+
+This approach allows the Smart Finance Assistant to continue providing useful financial recommendations even when the external AI service is temporarily unavailable.
+
+**Example Improvement Provided by AI:**
+
+```python id="x3n7lt"
+try:
+
+    response = rag.ask(
+        question,
+        documents=rag_documents
+    )
+
+except Exception:
+
+    response = """
+Smart Finance Assistant is currently
+running in offline mode.
+
+Based on your spending analysis:
+
+- Entertainment is your highest
+  spending category.
+
+- Consider setting a monthly
+  entertainment budget.
+"""
+```
+
+**How It Helped the Project:**
+The AI helped improve the reliability and professionalism of the Smart Finance Assistant by introducing fault-tolerant AI handling. This made the system more robust and realistic by ensuring users still receive financial insights even when external AI services experience connection issues.
