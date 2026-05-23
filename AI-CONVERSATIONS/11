@@ -1,0 +1,40 @@
+### AI Conversation Evidence
+
+**Prompt 5:**
+“Review my pseudocode for analyzing spending data from a CSV. Are there any edge cases I'm missing? What business logic should I add to make this more valuable for personal finance insights?”
+
+**AI Response Summary:**
+The AI reviewed the spending analysis algorithm and identified several missing edge cases and business logic improvements. It recommended adding validation for:
+
+* empty CSV files,
+* duplicate transactions,
+* invalid date formats,
+* refunds,
+* zero-value transactions,
+* and missing columns.
+
+The AI also suggested improving the Smart Finance Assistant with more advanced financial analysis features such as:
+
+* budget comparison,
+* subscription detection,
+* spending trend analysis,
+* savings estimation,
+* and personalized financial insights.
+
+**Example Improvement Provided by AI:**
+
+```text id="m1d2ke"
+Additional Business Logic Suggestions:
+
+1. Budget Comparison
+- Compare spending against user-defined category budgets.
+
+2. Subscription Detection
+- Detect recurring transactions such as Spotify or Netflix subscriptions.
+
+3. Spending Trend Analysis
+- Compare spending across weeks or months to identify increases or decreases.
+```
+
+**How It Helped the Project:**
+The AI helped strengthen the project algorithm by identifying realistic financial edge cases and suggesting more intelligent business logic. These improvements made the Smart Finance Assistant more practical, reliable, and capable of generating meaningful personal finance insights for users.
