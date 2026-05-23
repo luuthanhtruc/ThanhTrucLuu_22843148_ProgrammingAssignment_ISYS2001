@@ -1,0 +1,76 @@
+### AI Conversation Evidence
+
+**Prompt 3:**
+“For a personal finance assistant that analyzes CSV transaction data, what are the most valuable inputs I should collect and outputs I should provide? Consider both technical data processing and business value for the user.”
+
+**AI Response Summary:**
+The AI suggested important system inputs and outputs for a Smart Finance Assistant project. It recommended collecting transaction details such as dates, amounts, categories, descriptions, and budget limits to support financial analysis. The AI also proposed useful outputs including spending summaries, overspending detection, spending trends, budgeting insights, and financial recommendations.
+
+The AI then helped refine these ideas into a clearer system specification focused on helping university students manage monthly budgets through CSV transaction analysis.
+
+**Example Improvement Provided by AI:**
+
+```text id="f2lhxq"
+Inputs:
+
+CSV file containing bank transaction data
+(columns: Date, Amount, Category, Description)
+
+Student budget limits for different spending categories
+(e.g., food, entertainment, transport)
+
+Selected time period for analysis
+(weekly or monthly)
+
+Outputs:
+
+Monthly spending summary by category
+
+Overspending detection compared to budget limits
+
+Simple financial recommendations for improving budgeting habits
+```
+
+**How It Helped the Project:**
+The AI helped define the core system requirements for the Smart Finance Assistant by identifying valuable financial data inputs and meaningful user-focused outputs. This improved the project planning process and clarified how the system would deliver budgeting insights and spending awareness for university students.
+
+### AI Conversation Evidence
+
+**Prompt 4:**
+“Give me 3 realistic examples of Australian transaction data with different scenarios (normal spending, refunds, large purchases). Show me how to manually calculate meaningful financial insights from each scenario.”
+
+**AI Response Summary:**
+The AI generated three realistic Australian financial transaction scenarios for a Smart Finance Assistant project:
+
+* normal student spending,
+* refund transactions,
+* and large purchase situations.
+
+For each scenario, the AI provided:
+
+* sample CSV-style transaction data,
+* manual financial calculations,
+* category analysis,
+* average transaction calculations,
+* and financial insights explaining spending behavior.
+
+The examples were designed to demonstrate how CSV transaction analysis can produce useful budgeting and spending awareness insights for users.
+
+**Example Improvement Provided by AI:**
+
+```text id="mln8s9"
+Total Spending:
+$72.30 + $1,850.00 + $16.20 + $31.50 + $14.90
+= $1,984.90
+
+Electronics Spending Percentage:
+($1,850.00 ÷ $1,984.90) × 100 ≈ 93%
+
+Insight:
+The laptop purchase heavily impacted monthly spending,
+representing approximately 93% of total expenses.
+```
+
+**How It Helped the Project:**
+The AI helped create realistic financial analysis examples that demonstrate the practical functionality of the Smart Finance Assistant. These examples improved understanding of how transaction data can be processed to generate budgeting insights, detect spending patterns, and provide meaningful financial recommendations for users.
+
