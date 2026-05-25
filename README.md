@@ -35,8 +35,8 @@ using Retrieval-Augmented Generation (RAG)
 
 Example Question:
 "How can I reduce entertainment spending?"
-- Sample Output
 
+- Sample Output
 SMART FINANCE REPORT
 
 Total Spending: $150.95
