@@ -9,42 +9,68 @@ This file shows sample entries for your **Developer's Diary**. You must document
 
 ---
 
-## Foundation Skills Examples
 
-### Entry 1 – Improving AI Connection Error Handling
-**Artifact:** Screenshot of ChatGPT conversation about fixing Hands-on-AI server connection errors and improving API testing code for the Smart Finance Assistant project.
-
-**My Initial Prompt:** "Why is this error happening?"
-
-**My Improved Prompt:** "I am testing the Hands-on-AI server connection for my Smart Finance Assistant project using get_response(). The response sometimes returns connection errors even when the code structure is correct. Help me improve the code with better error handling, response validation, fallback messaging, and troubleshooting steps for Google Colab."
-
-**Context:** Learning how to improve AI-generated code reliability and handle real-world API connection problems professionally.
-
-**Reflection:**: The first version only displayed basic connection errors. The improved version added better error handling, fallback responses, and clearer troubleshooting steps. I learned that AI applications should handle API failures gracefully and provide user-friendly feedback instead of crashing.
-
+## Week 9 – AI Collaboration Evidence
 
 ---
 
-### Entry 2 – Data Loading and Cleaning Function
-**Artifact:** Screenshot of my ChatGPT conversation about improving the load_and_clean_transaction_data() function for my Smart Finance Assistant project.
+## Entry 1 – Improving AI Connection Testing
 
-**Context:** Creating a reliable function to load and clean financial transaction data before analysis.
+### Artifact
+Week 9 AI conversation evidence
 
-**AI's First Response:**
+### Context
+Week 9 I focused on improving the AI connection testing part of the Smart Finance Assistant. I wanted the output to look cleaner and more professional while still keeping the code simple enough for a beginner-level project.
+
+### Prompt
+“I am creating a Smart Finance Assistant and writing code to test the AI connection. I want a shorter, cleaner, and more aesthetic version of the code.”
+
+### AI Response Summary
+The AI suggested simplifying the connection testing process by reducing unnecessary comments, improving console messages, and adding a cleaner fallback system when the AI service is unavailable.
+
+### Example Improvement
+
 ```python
-def load_and_clean_transaction_data(file_path): pass
+print("🔄 Connecting to AI...\n")
+
+if "Error" in str(response):
+    print("⚠️ AI unavailable — switching to offline mode.\n")
 ```
 
-**My Critique:** "The function is incomplete because pass does nothing. I need proper CSV loading, data cleaning, validation, missing value handling, and business-friendly error messages."
+Reflection
 
-**AI's Improved Response:**
-```python
-# Clean Amount column df["Amount"] = ( df["Amount"] .astype(str) .str.replace("$", "", regex=False) .str.replace(",", "", regex=False) ) # Convert Amount to numeric df["Amount"] = pd.to_numeric( df["Amount"], errors="coerce" ) # Remove invalid rows df = df.dropna(subset=["Amount"]) # Convert Date column df["Date"] = pd.to_datetime( df["Date"], errors="coerce" )
-```
+The AI suggestions made the code easier to read and improved the appearance of the console output. I learned that small formatting improvements can make a project feel more professional and easier for users to understand.
 
-**Reflection:** The first AI response only provided an empty function structure and did not solve the actual problem. After giving more detailed feedback and explaining the business requirements, the AI generated a much more useful solution with CSV validation, data cleaning, type conversion, and better error handling. I learned that AI-generated code often needs refinement, and giving clear technical and business context helps produce more professional and reliable results.
+One issue I encountered was that the external AI service sometimes failed to connect. Because of this, I later added fallback responses so the assistant could still provide financial advice even if the AI connection failed.
 
----
+## Entry 2 – Defining the Finance Problem
+
+### Artifact
+
+Week 9 AI conversation evidence 
+
+### Context
+
+I wanted to define a clear financial problem for the Smart Finance Assistant instead of creating a generic chatbot. My goal was to focus on budgeting and spending awareness for university students.
+
+### Prompt
+
+“Help me brainstorm specific personal finance problems that could be solved with a CSV analysis tool. I'm interested in helping people with budgeting and spending awareness.”
+
+### AI Response Summary
+
+The AI suggested several realistic financial problems that could be solved using CSV transaction analysis, such as overspending detection, subscription tracking, savings analysis, and spending habit monitoring.
+
+The AI also helped rewrite the project idea into a more specific and realistic problem statement focused on helping university students manage their monthly budgets.
+
+### Example Improvement
+I want to help university students manage their monthly budgets by analyzing their bank transaction CSV files. The system should identify categories where users overspend, compare spending against budget limits, and provide simple recommendations to improve financial control.
+
+### Reflection
+
+This discussion helped me narrow the project scope and focus on a more realistic finance problem. Before using AI, my idea was too broad and unclear. The AI helped me think more about the target users, the actual financial challenges they face, and how the assistant could provide useful insights instead of generic responses.
+
+I also learned that defining the business problem clearly before coding makes it easier to design the system features later.
 
 ### Entry 3 – Business Context in AI Interactions
 **Artifact:** Screenshot of Gemini generating financial insights from data.
