@@ -6,7 +6,74 @@
 
 Welcome to your project repository for the **ISYS2001 Final Programming Project**. This repo provides a starting point for building your **Smart Finance Assistant**.
 
----
+## What this assistant does
+The Smart Finance Assistant helps university students analyze spending habits using CSV transaction data. 
+The system:
+- Processes financial transaction data
+- Calculates spending summaries
+- Detects high spending categories
+- Generates budgeting insights
+- Provides AI-powered financial advice
+using Retrieval-Augmented Generation (RAG)
+
+## Features
+- CSV transaction analysis
+- Spending category breakdown
+- Refund detection
+- Financial insight generation
+- AI-powered budgeting advice
+- RAG financial document retrieval
+- Error handling for invalid data
+
+## Sample Input and Ouput
+- Sample Input
+| Date | Amount | Category | Description |
+|------|--------|----------|-------------|
+| 2026-05-01 | $45.50 | Groceries | Woolworths |
+| 2026-05-02 | $12.00 | Transport | Transperth |
+| 2026-05-03 | $89.95 | Entertainment | Concert |
+
+Example Question:
+"How can I reduce entertainment spending?"
+- Sample Output
+
+SMART FINANCE REPORT
+
+Total Spending: $150.95
+Top Spending Category: Entertainment
+
+AI Financial Advice:
+- Set a monthly entertainment budget
+- Track discretionary spending weekly
+- Reduce unnecessary subscriptions
+
+##  How to Run 
+
+1. Open the notebook in Google Colab
+
+2. Install dependencies:
+
+```python
+!pip install hands-on-ai -q
+```
+
+3. Upload the CSV transaction dataset
+
+4. Run all notebook cells in order
+
+5. Ask financial questions such as:
+
+"How can I improve my budgeting habits?"
+
+## 5. Technologies Used
+ Technologies Used
+
+- Python
+- pandas
+- hands-on-ai
+- Google Colab
+- Retrieval-Augmented Generation (RAG)
+- Gradio
 
 ## 📖 Project Overview
 In this project, you will design and implement a **Smart Finance Assistant** using:
