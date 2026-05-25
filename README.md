@@ -27,6 +27,7 @@ using Retrieval-Augmented Generation (RAG)
 
 ## Sample Input and Ouput
 - Sample Input
+
 | Date | Amount | Category | Description |
 |------|--------|----------|-------------|
 | 2026-05-01 | $45.50 | Groceries | Woolworths |
@@ -34,8 +35,8 @@ using Retrieval-Augmented Generation (RAG)
 | 2026-05-03 | $89.95 | Entertainment | Concert |
 
 Example Question:
-"How can I reduce entertainment spending?"
 
+"How can I reduce entertainment spending?"
 - Sample Output
 
 SMART FINANCE REPORT
