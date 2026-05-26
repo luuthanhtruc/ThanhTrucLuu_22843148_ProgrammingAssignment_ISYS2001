@@ -72,6 +72,8 @@ This discussion helped me narrow the project scope and focus on a more realistic
 
 I also learned that defining the business problem clearly before coding makes it easier to design the system features later.
 
+## Week 10 – AI Collaboration Evidence
+
 ## Entry 3 – Identifying System Inputs and Outputs
 
 ### Artifact
@@ -169,41 +171,51 @@ I also learned that realistic examples make the project feel much more practical
 
 ---
 
-## Advanced Integration Examples
+## Week 11 – AI Collaboration Evidence
 
-### Entry 5 – Combining Multiple AI Tools
-**Artifact:** Screenshot showing integration of hands-on-ai chat with pandas analysis.
+### Entry 5 – Improving Spending Analysis Logic
 
-**Context:** I wanted to create a chatbot that could answer questions about spending data.
+**Artifact:** Week 11 AI conversation evidence 
 
-**My Approach:** Used AI to help me combine CSV analysis with hands-on-ai chat functionality.
+**Context:** I wanted to improve the spending analysis logic so the Smart Finance Assistant could handle more realistic financial data situations.
 
-**Key Learning:** AI helped me structure the integration, but I had to understand the business logic to make it useful. The chatbot needed to understand financial concepts, not just execute code.
+**My Prompt:**  
+"Review my pseudocode for analyzing spending data from a CSV. Are there any edge cases I'm missing? What business logic should I add to make this more valuable for personal finance insights?"
 
-**Reflection:** Integrating multiple technologies requires understanding how each piece serves the business purpose. AI can generate technical integration code, but I need to guide it toward business value.
+**AI Response Summary:**  
+The AI suggested adding validation for issues such as empty CSV files, duplicate transactions, refunds, invalid date formats, missing columns, and zero-value transactions. It also recommended adding more advanced business logic including budget comparison, subscription detection, spending trend analysis, and savings estimation.
 
----
+**My Critique/Improvement:**  
+I realized my original pseudocode focused too much on basic calculations and not enough on real-world financial data problems. I updated the logic to include refund handling, duplicate transaction checks, and more useful financial insight features like subscription tracking and spending trend analysis.
 
-### Entry 6 – Professional Error Handling
-**Artifact:** Code snippet showing error handling for file uploads.
+**Result:**  
+The updated spending analysis system became more realistic and practical. Instead of only calculating totals, the Smart Finance Assistant can now handle messy CSV data more reliably and generate more meaningful budgeting insights for users.
 
-**Context:** I needed my Gradio interface to handle bad CSV files gracefully.
-
-**AI Suggestion:** Generated try/catch blocks with business-appropriate error messages:
-```python
-try:
-    df = pd.read_csv(file.name)
-    # Analysis code...
-except FileNotFoundError:
-    return "Please upload a valid CSV file."
-except pd.errors.EmptyDataError:
-    return "The uploaded file appears to be empty. Please check your data."
-```
-
-**Reflection:** AI helped me think about user experience, not just technical functionality. Good error messages help users understand what went wrong and how to fix it. This is crucial for business applications.
+**Reflection:**  
+This activity helped me understand that real financial data is often inconsistent and requires much more validation than I originally expected. I also learned that adding business-focused logic makes the project feel much more like a real financial assistant instead of just a simple CSV calculator.
 
 ---
 
+### Entry 6 – Building the Python Spending Analysis Function
+
+**Artifact:** Week 11 AI conversation evidence 
+
+**Context:** I wanted to convert my spending analysis pseudocode into a proper Python function that could process CSV transaction data automatically.
+
+**My Prompt:**  
+"I'm implementing a Smart Finance Assistant. Based on my pseudocode, please create a Python function that analyzes spending data from a CSV file. The code should handle real-world CSV data issues, include clear comments, use professional variable names, format output for business presentation, and include basic error handling."
+
+**AI Response Summary:**  
+The AI generated a Python function that loads and validates CSV transaction data, cleans financial values, separates spending and refunds, calculates spending summaries, and generates readable financial insights. It also helped simplify the code into a cleaner and shorter version while keeping the important financial calculations and error handling.
+
+**My Critique/Improvement:**  
+The first version of the code was functional but too long and difficult to read. I simplified the structure, improved the formatting of the financial report output, and reduced unnecessary comments while still keeping the important business calculations and error handling.
+
+**Result:**  
+I ended up with a cleaner and more professional spending analysis function that can process CSV transaction data, generate financial summaries, and prepare insights for the AI assistant. The final version was easier to understand and looked much more polished.
+
+**Reflection:**  
+This task helped me better understand how to turn planning and pseudocode into a working implementation. I also learned that readability and structure are important in business programming because users need financial information presented clearly and professionally.
 ## AI Collaboration Best Practices I've Learned
 
 ### 🎯 Effective Prompting Strategies
