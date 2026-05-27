@@ -1,15 +1,6 @@
-# 📓 Developer's Diary – AI Collaboration Guide
+# 📓 Developer's Diary – AI Collaboration 
 
-This file shows sample entries for your **Developer's Diary**. You must document your AI collaboration throughout the project development. Each entry should have:
-- **Artifact**: a screenshot, GIF, or snippet of your AI interaction
-- **Context**: one-sentence description of your goal
-- **Reflection**: analysis of what happened, what you learned, and how you improved the solution
-
-**Key Principle**: You're directing AI like a junior developer - always review, critique, and improve their suggestions.
-
----
-
-
+This file shows entries for my **Developer's Diary**. 
 ## Week 9 – AI Collaboration Evidence
 
 ---
